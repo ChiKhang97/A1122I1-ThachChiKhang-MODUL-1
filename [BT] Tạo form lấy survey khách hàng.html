@@ -3,80 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <title>Market Research Survey</title>
+    <style>
+        .center {
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
 <h1 style="font-family: Tahoma; font-size: 20px; font-weight: bold;"> Market Research Survey </h1>
-    <class>Please take a few moments to complete this satisfaction survey</class><hr>
-        <div class="h2" style="font-family: Tahoma; font-size:13px; font-weight: bold; margin-bottom: 3%;">
-        <h2 style="padding:-10px;">What is your age range?</h2>
-        <select name="hat is your age range?">
-            <option value="1">18 - 24</option>
-            <option value="2">25 - 34</option>
-            <option value="3">35 - 50</option>
-        </select>
-        </div>
+<class>Please take a few moments to complete this satisfaction survey</class><hr>
+<div class="h2" style="font-family: Tahoma; font-size:13px; font-weight: bold; margin-bottom: 3%;">
+    <h2 style="padding:-10px;">What is your age range?</h2>
+    <select name="hat is your age range?">
+        <option value="1">18 - 24</option>
+        <option value="2">25 - 34</option>
+        <option value="3">35 - 50</option>
+    </select>
+</div>
 
-        <div class="h2" style="font-family: Tahoma; font-size:13px; font-weight:bold; margin-bottom: 3%;">
-        <h2>What is your yearly income range?</h2>
-        <select name="What is your yearly income range?">
-            <option value="1">$0 - $25,000</option>
-            <option value="2">$25,001 - $50,000</option>
-            <option value="3">$50,001 - $1000,000</option>
-            <option value="4">$100,000+</option>
-        </select>
-        </div>
-        <div class="h2" style="font-family: Tahoma; font-size:13px; font-weight: bold; margin-bottom: 3%;">
-            <h2>Gender Identity</h2>
-                <input type="radio" name="gender"> Male <br>
-                <input type="radio" name="gender"> Female <br>
-                <input type="radio" name="gender"> Nonbinary <br>
-                <input type="radio" name="gender"> Other <br>
-            <input type="text" placeholder="Dollars" id="Dollars" name="Dollars" size="12"> - <input type="text" placeholder="Cents" id="Cents" name="Cents" size="4">
-            </select>
-        </div><div class="h2" style="font-family: Tahoma; font-size:13px; font-weight: bold; margin-bottom: 3%;">
-            <h2>How often would you use our new product?</h2>
-                <input type="radio" name="gender"> Daily <br>
-                <input type="radio" name="gender"> Weekly <br>
-                <input type="radio" name="gender"> Monthly <br>
-            </select>
-        </div>
-        <div class="h2" style="font-family: Tahoma; font-size:13px; font-weight: bold; margin-bottom: 3%;">
-            <h2>What features would you like to see in the new product.</h2>
-            <textarea name="" id="a" cols="120" rows="10"></textarea>
-        </div>
-        <div class="h3" style="font-family: Tahoma; font-size: 13px; font-weight: bold; margin-bottom: 3%;">
-            <h3>Please rate your level of agreement with the following statements.</h3>
-            <table border="1">
-                <tbody><tr style="background: #cccce7">
-                    <th></th>
-                    <th>Strongly Disagree</th>
-                    <th>Disagree</th>
-                    <th>Agree</th>
-                    <th>Strongly Agree</th>
-                </tr>
-                <tr>
-                    <td>Our products are priced fairly</td>
-                    <td><input type="radio" name="priced">1</td>
-                    <td><input type="radio" name="priced">2</td>
-                    <td><input type="radio" name="priced">3</td>
-                    <td><input type="radio" name="priced">4</td>
-                </tr>
-                <tr>
-                    <td>Our products are high fairly</td>
-                    <td> <input type="radio" name="high">1</td>
-                    <td> <input type="radio" name="high">2</td>
-                    <td> <input type="radio" name="high">3</td>
-                    <td> <input type="radio" name="high">4</td>
-                </tr>
-                <tr>
-                    <td>You would recommend our product to a friend or coworker</td>
-                    <td> <input type="radio" name="j">1</td>
-                    <td> <input type="radio" name="j">2</td>
-                    <td> <input type="radio" name="j">3</td>
-                    <td> <input type="radio" name="j">4</td>
-        </div>
+<div class="h2" style="font-family: Tahoma; font-size:13px; font-weight:bold; margin-bottom: 3%;">
+    <h2>What is your yearly income range?</h2>
+    <select name="What is your yearly income range?">
+        <option value="1">$0 - $25,000</option>
+        <option value="2">$25,001 - $50,000</option>
+        <option value="3">$50,001 - $1000,000</option>
+        <option value="4">$100,000+</option>
+    </select>
+</div>
+<div class="h2" style="font-family: Tahoma; font-size:13px; font-weight: bold; margin-bottom: 3%;">
+    <h2>Gender Identity</h2>
+    <input type="radio" name="gender"> Male <br>
+    <input type="radio" name="gender"> Female <br>
+    <input type="radio" name="gender"> Nonbinary <br>
+    <input type="radio" name="gender"> Other <br>
+    <input type="text" placeholder="Dollars" id="Dollars" name="Dollars" size="12"> - <input type="text" placeholder="Cents" id="Cents" name="Cents" size="4">
+    </select>
+</div><div class="h2" style="font-family: Tahoma; font-size:13px; font-weight: bold; margin-bottom: 3%;">
+    <h2>How often would you use our new product?</h2>
+    <input type="radio" name="gender"> Daily <br>
+    <input type="radio" name="gender"> Weekly <br>
+    <input type="radio" name="gender"> Monthly <br>
+    </select>
+</div>
+<div class="h2" style="font-family: Tahoma; font-size:13px; font-weight: bold; margin-bottom: 3%;">
+    <h2>What features would you like to see in the new product.</h2>
+    <textarea name="" id="a" cols="120" rows="10"></textarea>
+</div>
 <div class="h3" style="font-family: Tahoma; font-size: 13px; font-weight: bold; margin-bottom: 3%;">
-    <input type="submit" value="SUBMIT"></div>
+    <h3>Please rate your level of agreement with the following statements.</h3>
+    <table border="1">
+        <tbody><tr style="background: #cccce7">
+            <th></th>
+            <th>Strongly Disagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly Agree</th>
+        </tr>
+        <tr>
+            <td>Our products are priced fairly</td>
+            <td class = "center"><input type="radio" name="priced">1</td>
+            <td class = "center"><input type="radio" name="priced">2</td>
+            <td class = "center"><input type="radio" name="priced">3</td>
+            <td class = "center"><input type="radio" name="priced">4</td>
+        </tr>
+        <tr>
+            <td class = "center">Our products are high fairly</td>
+            <td class = "center"> <input type="radio" name="high">1</td>
+            <td class = "center"> <input type="radio" name="high">2</td>
+            <td class = "center"> <input type="radio" name="high">3</td>
+            <td class = "center"> <input type="radio" name="high">4</td>
+        </tr>
+        <tr>
+            <td class = "center">You would recommend our product to a friend or coworker</td>
+            <td class = "center"><input type="radio" name="Z">1</td>
+            <td class = "center"><input type="radio" name="Z">2</td>
+            <td class = "center"><input type="radio" name="Z">3</td>
+            <td class = "center"><input type="radio" name="Z">4</td>
+            </table>
+        </tr><br>
+            <input type="submit" name="SUBMIT">
+        </div>
 </body>
 </html>
-
