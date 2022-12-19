@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển Đổi Tiền</title>
+</head>
+<body>
+<input type="text" name="Đầu Vào" id="Đầu Vào">
+<select name="sel1" id="ABC">
+    <option value="VNĐ">VNĐ</option>
+    <option value="USD">USD</option>
+</select>
+<select name="sel2" id="select2">
+    <option value="VNĐ">VNĐ</option>
+    <option value="USD">USD</option>
+</select>
+<button onclick="ABC()">Convert</button>
+<p id="result"></p>
+<script>
+    function changeMoney() {
+        let inputMoney= document.getElementById("input").value;
+        let select1= document.getElementById("select1").value;
+        let select2= document.getElementById("select2").value;
+        let result;
+        if (select1==select2) {
+            result=inputMoney
+        }
+            else if ( select1=="VNĐ" && select2=="USD"){
+            result=inputMoney
+        }
+        else {
+            result=inputMoney*24000
+        }
+        document.getElementById("result").innerText="Result:"+result
+    }
+</script>
+
+</body>
+</html>
