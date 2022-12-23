@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập cấu trúc điều kiện 02 - Bài 10</title>
+</head>
+<body>
+<script>
+  let a = +prompt("Nhập số điện");
+  let b = +prompt("Nhập giá điện");
+  let a1 = 1688, a2 = 1777, a3 = 1888;
+  if (a < 0) {
+      document.write("Số liệu sai, ban hãy kiểm tra và nhập lại");
+  } else if (a <= 50) {
+      b = a + a1;
+      document.write("Tổng tiền điện: " +b)
+  } else if (a <= 100) {
+      b = a + a2
+      document.write("Tổng tiền điện: " +b)
+  } else if (a <= 200) {
+      b = a + a3;
+      document.write("Tổng tiền điện: " +b)
+  } else if (a > 200) {
+      b = a + a3;
+      document.write("Số điện của bạn vượt mức cho hộ dân dụng bình thường, hãy liên hệ điện lực")
+  }
+</script>
+
+</body>
+</html>
