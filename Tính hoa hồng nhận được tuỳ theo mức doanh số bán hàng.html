@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1 - 05</title>
+</head>
+<body>
+<script>
+  let a = +prompt('Nhập doanh số bán hàng')
+  let b
+  if (a < 10000000) {
+    b = a * 0.10;
+    document.write("Hoa hong"+ b)
+  }
+  else if(a<20000000) {
+    b = a * 0.12;
+    document.write('Hoa hong'+ b)
+  }
+  else if(a<30000000) {
+    b = a * 0.14;
+    document.write('Hoa hong'+ b)
+  }
+  else {
+    b = a * 0.16;
+    document.write('Hoa hong'+ b)
+  }
+</script>
+</body>
+</html>
