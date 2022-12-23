@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập cấu trúc điều kiện 02 - Bài 7</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập tham số a:");
+    let b = +prompt("Nhập tham số b:");
+    let c = +prompt("Nhập tham số c:");
+    let Δ = (b*b) - (4*a*c);
+    let x1 , x2;
+    if (Δ < 0) {
+        document.write("phương trình vô nghiệm");
+    } else if (Δ = 0) {
+        document.write("phương trình (1) có nghiệm kép x_{1} =x_{2} = -b/2a");
+    } else if (Δ > 0) {
+        x1 = (-b + math.sqrt(Δ))/(2*a)
+        x2 = (-b - math.sqrt(Δ))/(2*a)
+        document.write("phương trình có 2 nghiệm phân biệt");
+    }
+
+</script>
+</body>
+</html>
