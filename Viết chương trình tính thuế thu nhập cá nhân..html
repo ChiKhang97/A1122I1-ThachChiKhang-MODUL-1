@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập cấu trúc điều kiện 02 - Bài 11</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập nhập của bạn (theo năm)");
+    let b;
+    if (a <= 60) {
+        b=a*0.05
+        document.write("Số tiền thuế thu nhập phải đóng là (vnđ): " +b )
+    } else if (a <= 120) {
+        b=a*0.1
+        document.write("Số tiền thuế thu nhập phải đóng là: " +b)
+    } else if (a <= 216) {
+        b=a*0.15
+        document.write("Số tiền thuế thu nhập phải đóng là: " +b)
+    } else if (a <= 384) {
+        b=a*0.1
+        document.write("Số tiền thuế thu nhập phải đóng là: " +b)
+    } else {
+        document.write("Số liệu bạn vừa nhập có thể sai, hãy kiểm tra lại")
+    }
+</script>
+</body>
+</html>
