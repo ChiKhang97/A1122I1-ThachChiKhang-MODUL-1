@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập vòng lặp 01 - Bài 05</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let c = 1;
+    let d = a + b + c;
+    for (i=1;i<20;i++) {
+        a = b;
+        b = c;
+        c = a + b;
+        d += c;
+    }
+    document.write("Tổng của 20 số đầu tiên trong dãy fibonacci: " + d)
+</script>
+
+</body>
+</html>
