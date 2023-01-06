@@ -8,16 +8,16 @@
 <script>
     let numbers = +prompt("Nhập một giá trị từ bàn phím để lưu số lượng số nguyên tố cần in ra") ;
     let a = 0;
-    let b = 0
-    while(b < numbers){
-        for(let a =1;;++a){
+    let b = 0;
+    while(b < numbers) {
+        for(let a =1;;++a) {
             let count =0;
-            for(let i=2;i<=a-1;i++){
+            for(let i=2;i<=a-1;i++) {
                 if(a%i==0){
                     count++;
                 }
             }
-            if(count==0 && a>1){
+            if(count==0 && a>1) {
                 document.writeln(a);
                 b++;
             }
