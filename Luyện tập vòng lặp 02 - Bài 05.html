@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình tính lãi ngân hàng</title>
+</head>
+<body>
+<script>
+    let a = parseInt(+prompt("Hãy nhập thu nhập trong 1 tháng của bạn. (VNĐ)"))
+    if(a<=20000000){
+        document.write("Thuế thu nhập bạn phải đóng là: " +(a*0.1))
+    }
+    else if (a<=50000000){
+        document.write("Thuế thu nhập bạn phải đóng là: " +(a*0.15))
+    }
+    else if (a<=100000000){
+        document.write("Thuế thu nhập bạn phải đóng là: " +(a*0.2))
+    }
+    else{
+        document.write('Có vẻ như bạn đã nhập sai, hãy kiểm tra và nhập lại.')
+    }
+</script>
+</body>
+</html>
