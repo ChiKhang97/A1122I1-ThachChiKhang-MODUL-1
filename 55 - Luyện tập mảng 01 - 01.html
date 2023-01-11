@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử.</title>
+</head>
+<body><h3>Nhập vào 10 phần tử là số nguyên để tạo mảng</h3>
+<input type="text" id="a"/>
+<input type="button" id="add" value="Add" onclick="add()"/>
+<input type="button" id="display" value="Display" onclick="Display()"/>
+<div id="result"></div>
+<h4>Kiểm tra xem có bao nhiều phân tử => 10</h4>
+<input type="button" id="CHECK" value="CHECK" onclick="CHECK()"/>
+<div id="result1"></div>
+<script>
+    let numbers =[0,1,2,3,19,10,5,13,3,4];
+    let count =0;
+    for(let i=0;i<10;i++){
+        if(numbers[i]>=10)
+            count++ ;
+    }
+    document.write(numbers);
+    alert("Có "+count+" số nguyên lớn hơn hoặc bằng 10 trong mảng!");
+</script>
+</body>
+</html>

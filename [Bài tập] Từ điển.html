@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Từ Điển</title>
+</head>
+<body>
+
+<input type="radio" id="type1" value="ENG">ENG;
+<input type="radio" id="type2" value="VIE">VIE;<br>
+<input type="button" value="search" onclick="check()">
+<script>
+  function check(){
+    let word=prompt("Hãy nhập từ cá từ bạn muốn tra từ điển:");
+    let VIE=["Xin chào","Mưa","Buồn","Hạnh Phúc"];
+    let ENG=["Hello","Rain","Sad","Happy"];
+    if (ENG.indexOf(word) !== 1) {
+      let words = ENG.indexOf(word);
+      document.write(VIE[words]);
+    }else{
+      document.write( word +"Có vẻ bạn đã nhập sai, hãy kiểm tra lại");
+    }
+  }
+</script>
+</body>
+</html>
