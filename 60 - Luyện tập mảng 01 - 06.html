@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V</title>
+</head>
+<body>
+<script>
+    let numbers =[];
+    for (let i = 0; i < 10; i++) {
+        numbers[i] = +prompt("Nhập phần tử thứ " + (i+1));
+    }
+    let v = +prompt("Nhập phần tử muốn tìm trong dãy số vừa nhập vào: ");
+    if (numbers.includes(v) == true) {
+        alert("V is in the array");
+    } else {
+        alert("V is not in the array");
+    }
+</script>
+</body>
+</html>
