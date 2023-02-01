@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử</title>
+</head>
+<body>
+<script>
+    let SoNguyen =[0,1,2,3,4,5,6,7,8,9];
+    let SoNguyen=[];
+    for(let i=0;i<10 ;i++) {
+        SoNguyen[i]= +prompt("Nhập Số Nguyên" + (i+1));
+    }
+    SoNguyen.sort(function(a, b) {
+        return (-a + b);
+    })
+    document.write("Mảng sau khi sắp xếp: "+ SoNguyen);
+    //console.log(SoNguyen.reverse())
+
+</script>
+</body>
+</html>
