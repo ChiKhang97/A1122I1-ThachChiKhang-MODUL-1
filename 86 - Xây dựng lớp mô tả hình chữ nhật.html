@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100"></canvas>
+<SCRIPT>
+    class Rectangle { //Rectangle HÌNH CHỮ NHẬT
+        constructor(dài, rộng) {
+            this.dài = dài;
+            this.rộng = rộng; //thuộc tính
+        }
+        tinhDienTich () {
+            return this.dài*this.rộng;
+        }
+        tinhChuVi () {
+            return (this.dài+this.rộng)*2;
+        }
+        vehinhChuNhat () {
+            ctx.beginPath();
+            ctx.rect(30,50,this.dài,this.rộng);
+            ctx.fillStyle = "blue";
+            ctx.fill();
+        }
+    }
+    let rectangle = new Rectangle(700,450);
+    console.log("dientich="+ rectangle.tinhChuVi());
+    console.log("dientich"+ rectangle.tinhDienTich());
+    let canvas = document.getElementById("myCanvas");
+    let ctx = canvas.getContext("2d");
+    rectangle.vehinhChuNhat();
+
+
+</SCRIPT>
+</body>
+</html>
+<!--support: Hùng Giáo Sư =]]-->
